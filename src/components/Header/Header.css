@@ -1,0 +1,79 @@
+.header{
+    height: 30vw;
+    margin: 30px auto;
+    background-size: contain;
+    position: relative;
+}
+.header-content{
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+
+}
+.header-content h5{
+    font-weight: 500;
+    color: #8a5903;
+    font-size: max(4.5vw,22px);
+}
+.header-content p{
+    font-weight: 400;
+    color: wheat;
+    font-size: 1.5vw;
+}
+.carousel-inner button{
+    border: none;
+    color: grey;
+    font-weight: 500;
+    padding:5px 10px 0px 0px;
+    background-color: white;
+    font-size: max(1vw, 13px);
+    border-radius: 50px;
+}
+
+.slide{
+    display: flex;
+    flex-direction: row;
+   gap:50px;
+   bottom: -20px;
+    animation: fadeIn 3s;
+
+}
+
+.carousel-item h5{
+    line-height: center;
+    padding:80px 0px 1px 0px;
+    font-weight:200;
+    color: black;
+    font-size: max(3.5vw,45px);
+    
+}
+.carousel-item p{
+    line-height: center;
+    padding:20px 0px 1px 0px;
+    font-weight:250;
+    color: grey;
+    font-size: max(1.5vw,20px);
+}
+@media (max-width:1050px){
+    .header-content{
+        max-width: 40%;
+    }
+}
+@media (max-width:600px){
+    .row-slider{
+        max-width: 65%;
+    }
+    .row-slider p{
+        display: none;
+    }
+    .row-slider button{
+        padding:2vw
+    }
+
+}
